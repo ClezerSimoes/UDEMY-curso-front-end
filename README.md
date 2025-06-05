@@ -1,6 +1,6 @@
 # Material Curso Domine Front-end
 
-Esse repósitório contem apenas o material de estudo desenvolvido durante o curso de Front-End, por Jamilton Damasceno e Jorge Santana.
+Esse repósitório contem apenas o material de estudo desenvolvido durante o curso de Front-End, por Jamilton Damasceno e Jorge Santa Ana.
 
 # Tecnologias
 
