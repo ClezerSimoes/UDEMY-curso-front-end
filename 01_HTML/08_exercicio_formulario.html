@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Exercício Formulários</h1>
+
+    <form action="" method="get">
+        <fieldset>
+            <legend>Dados pessoais</legend>
+
+            <label for="nome">Nome</label><br>
+            <input type="text" name="nome" id="nome"><br>
+
+            <label for="email">E-mail</label><br>
+            <input type="email" name="email" id="email"><br>
+
+            <input type="checkbox" name="receber_email" id="receber_email" value="true">
+            <label for="receber_email">Quero receber e-mail</label><br><br>
+
+            <label for="senha">Senha</label><br>
+            <input type="password" name="senha" id="senha">
+        </fieldset>
+        <br>
+
+        <fieldset>
+            <legend>Informações adicionais</legend>
+
+            <input type="radio" name="pessoa" id="fisica" value="pf">
+            <label for="fisica">Pessoa Física</label>
+            <input type="radio" name="pessoa" id="juridica" value="pj">
+            <label for="juridica">Pessoa Jurídica</label>
+        </fieldset>
+        <br><br>
+        <input type="submit" name="cadastrar" id="cadastrar" value="Cadastrar">
+    </form>
+</body>
+</html>
