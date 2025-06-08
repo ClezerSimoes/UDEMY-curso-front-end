@@ -1,0 +1,18 @@
+p {
+    color: #666;
+}
+
+#produto {
+    border: solid 3px purple;
+    padding: 20px;
+    margin: 20px;
+}
+
+#titulo {
+    color: purple;
+}
+
+#imagem_produto {
+    border: solid 2px purple;
+    padding: 10px;
+}
