@@ -1,0 +1,58 @@
+header{
+    border-bottom: solid 1px;
+    background-color: violet;
+    padding: 20px 0px 20px 10px;
+}
+
+h3 {
+    padding: 0px;
+    margin: 0px;
+}
+
+#titulo {
+    padding: 0px;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    color: purple;
+}
+
+#painel-cursos {
+    border: solid 1px black;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#mobile {
+    background-color: yellow;
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#android {
+    background-color: lightgray;
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#ios {
+    background-color: lightgray;
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#flutter {
+    background-color: orange;
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+footer {
+    border:  solid  1px;
+    padding: 5px;
+}
