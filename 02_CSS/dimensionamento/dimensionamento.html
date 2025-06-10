@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dimensionamento</title>
+
+    <Style>
+
+        body {
+            border: 1px solid black;
+            font-size: 32px;
+        }
+        .pixel {
+            background-color: yellow;
+            border: 1px solid black;
+            padding: 8px;
+            width: 200px;
+        }
+
+        .porcentagem {
+            background-color: red;
+            border: 1px solid black;
+            padding: 8px;
+            width: 50%;
+        }
+
+        .view_port_width {
+            background-color: blue;
+            border: 1px solid black;
+            padding: 8px;
+            width: 50vw;
+        }
+
+        .view_port_height {
+            background-color: green;
+            border: 1px solid black;
+            padding: 8px;
+            width: 50vh;
+        }
+
+        .em_1 {
+            background-color: orange;
+            border: 1px solid black;
+            padding: 8px;
+            width: 30em;
+        }
+
+        .rem_1 {
+            background-color: purple;
+            border: 1px solid black;
+            padding: 8px;
+            width: 30rem;
+        }
+    </Style>
+</head>
+<body>
+
+    <div class="pixel">dimensionamento por pixel</div><br>
+    <div class="porcentagem">dimensionamento por Porcentagem</div><br>
+    <div class="view_port_width">dimensionamento por View Port Width (largura de pagina)</div><br>
+    <div class="view_port_height">dimensionamento por View Port height (altura de pagina)</div><br>
+    <div class="em_1">dimensionamento por View Port "em" (relativo ao elemento Pai)</div><br>
+    <div class="rem_1">dimensionamento por View Port "Rem"(relativo ao elemento raiz)</div>
+    
+</body>
+</html>
