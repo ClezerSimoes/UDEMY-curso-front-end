@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletores</title>
+
+    <style>
+        /* 
+        seletor universal "*"
+
+        * {
+            border: 1px solid red;
+            margin: 0px;
+            padding: 0px;
+        }
+        */
+
+        /* Seletor por tag */
+        h1,
+        p,
+        h2 {
+            color: blue;
+        }
+
+        /* Seletor de classe "." */
+        .destaque {
+            background: red;
+        }
+
+        /* Seletor de classe "." */
+        .titulo {
+            color: white;
+        }
+
+        /* Seletor de ID "#" */
+        #promocao {
+            background-color: blueviolet;
+        }
+
+        /* Seletor de filho direto ">" */
+        #pai>h1{
+            background-color: orange;
+            color: black;
+        }
+
+        /* Seletor de descendentes "espaço" */
+        #avo h1{
+            background-color: lime;
+            color: black;
+        }
+
+        /* Seletor irmão próximo "+" */
+        #irmao h1+p{
+            background-color: yellow;
+            color: black;
+        }
+
+
+        /* Seletor irmão geral "~" */
+        #irmao-geral h1~p{
+            background-color: yellow;
+            color: black;
+        }
+
+
+    </style>
+
+</head>
+
+<body>
+
+    <h1 class="destaque titulo">Título 1</h1>
+
+    <h2>Subtítulo 1</h2>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis voluptatem necessitatibus distinctio?
+        Ratione laboriosam tenetur, explicabo rerum velit eaque blanditiis ipsa exercitationem placeat eligendi minima
+        quisquam hic neque aspernatur labore?</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo cum ut rem quis provident alias eaque fuga ratione
+        asperiores illum, nisi sunt rerum pariatur dicta dolor aut id! Fugiat, rem!</p>
+
+    <h2>Subtítulo 2</h2>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores sit nobis consectetur voluptatibus aut.
+        Aspernatur quae sint dicta, exercitationem mollitia magni libero nihil ipsam, temporibus vero unde consectetur
+        fuga eaque?</p>
+
+    <div id="promocao">
+        <h2>Promoção</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores sit nobis consectetur voluptatibus aut.
+            Aspernatur quae sint dicta, exercitationem mollitia magni libero nihil ipsam, temporibus vero unde
+            consectetur fuga eaque?</p>
+    </div>
+
+    <div id="pai" style="border: 1px solid black;">
+        <h1>Seletor Filho direto</h1>
+        <h1>Filho</h1>
+        <span>
+            <h1>Filho do Filho</h1>
+        </span>
+    </div>
+
+    <div id="avo" style="border: 1px solid black; margin: 10px 0px ;">
+        <h1>Seletor Descendente</h1>
+        <h1>Filho</h1>
+        <span>
+            <h1>Filho do Filho</h1>
+        </span>
+    </div>
+
+    <div id="irmao" style="border: 1px solid black; margin: 10px 0px ;">
+        <h1>Seletor Irmão adjacente</h1>
+        <p>Irmão adjacente</p>
+        <p>Irmão da PQP</p>
+    </div>
+
+    <div id="irmao-geral" style="border: 1px solid black; margin: 10px 0px ;">
+        <h1>Seletor Irmão geral</h1>
+        <p>Irmão adjacente</p>
+        <p>Irmão da PQP</p>
+    </div>
+
+</body>
+
+</html>
