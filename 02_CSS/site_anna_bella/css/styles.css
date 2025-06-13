@@ -1,0 +1,48 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-image: url(../images/fundo.png);
+    padding: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+header{
+    padding: 0px;
+    margin: 0px;
+    height: 390px;
+}
+
+nav{
+    background-color: #c5c5b2;
+}
+
+main{
+    background-color: #e8e8d9;
+}
+
+footer{
+    text-align: center;
+    padding: 20px;
+}
+
+a{
+    color: #4b566a;
+    text-decoration: none;
+    padding: 20px;
+}
+
+h1{
+    color: #828271;
+    padding: 20px;
+}
+
+p{
+    padding: 20px;
+}
+
+#pagina{
+    width: 900px;
+}
