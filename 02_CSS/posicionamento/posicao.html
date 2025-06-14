@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posição</title>
+
+    <style>
+
+        #container {
+            background-color: yellow;
+            border: 2px solid black;
+            width: 900px;
+            height: 2160px;
+        }
+
+        #caixa-1 {
+            width: 100px;
+            height: 100px;
+            background-color: lightblue;
+            border: 1px solid blue;
+            position: relative; /* relativo ao container */
+        }
+
+        #caixa-2 {
+            width: 100px;
+            height: 100px;
+            background-color: lightpink;
+            border: 1px solid purple;
+            position: absolute; /* relativo a pagina */
+            top: 20px;
+            right: 80px;
+        }
+
+        #caixa-3 {
+            width: 100px;
+            height: 100px;
+            background-color: lightgreen;
+            border: 1px solid green;
+            position: fixed;
+            top: 40px;
+            left: 160px;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <div id="container">
+
+    <div id="caixa-1">Caixa 1<br><br>Relative</div>
+
+    <div id="caixa-2">Caixa 2<br><br>Absolute</div>
+
+    <div id="caixa-3">Caixa 3<br><br>fixed</div>
+
+    </div> <!-- container -->
+    
+</body>
+</html>
