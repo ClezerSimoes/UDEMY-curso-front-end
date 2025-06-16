@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos Flutuantes</title>
+
+    <style>
+        #container {
+            padding: 20px;
+            background-color: lightgray;
+            width: 920px;
+
+        }
+
+        #container::after {
+            content: " ";
+            clear: both;
+            display: table;
+        }
+
+        #imagem {
+            float: left;
+        }
+
+        #rodape {
+            padding: 20px;
+            background-color: black;
+            color: white;
+            width: 920px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="container">
+
+        <div id="imagem">
+            <img src="../../Assets/Images/celular1.png" width="300px">
+        </div>
+
+        <div>
+            <h1>Título</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro eum accusantium ipsam architecto sint!
+                Tempora doloremque quidem in architecto corporis porro, commodi repellat. Asperiores, possimus!
+                Molestias magni architecto aliquam eligendi.</p>
+            <hr><br>
+        </div>
+
+        <div>
+            <h1>Título</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro eum accusantium ipsam architecto sint!
+                Tempora doloremque quidem in architecto corporis porro, commodi repellat. Asperiores, possimus!
+                Molestias magni architecto aliquam eligendi.</p>
+            <hr><br>
+        </div>
+
+        <div>
+            <h1>Título</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro eum accusantium ipsam architecto sint!
+                Tempora doloremque quidem in architecto corporis porro, commodi repellat. Asperiores, possimus!
+                Molestias magni architecto aliquam eligendi.</p>
+            <hr><br>
+        </div>
+
+        <div>
+            <h1>Título</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro eum accusantium ipsam architecto sint!
+                Tempora doloremque quidem in architecto corporis porro, commodi repellat. Asperiores, possimus!
+                Molestias magni architecto aliquam eligendi.</p>
+        </div>
+
+    </div><!--container-->
+
+    <div id="rodape">
+        <h3>Rodapé</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+    </div>
+
+</body>
+
+</html>
