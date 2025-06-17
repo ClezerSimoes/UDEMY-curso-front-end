@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+
+    <style>
+        .container{
+            background-color: black;
+            color: white;
+            padding: 5px;
+            width: 600px;
+            height: 400PX;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        .container > div {
+            border: 1px solid white;
+            padding: 5px;
+            margin: 5px;
+            flex-grow: 1;
+            flex-shrink: 1;
+        }
+
+        .container >div.destaque {
+            flex-grow: 2;
+            flex-shrink: 2;
+            background-color: orange;
+            color: black;
+        }
+
+        .container >div.deslocado {
+            align-self: flex-start;
+            background-color: red;
+            color: black;
+        }
+
+        .coluna{
+            flex-direction: column;
+            align-items: flex-end;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>LINHA</h1>
+    <div class="container">
+        <div>Item 1</div>
+        <div class="deslocado">Item 2</div>
+        <div class="destaque">Item 3</div>
+        <div>Item 4</div>
+        <div>Item 5</div>
+        <div>Item 6</div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <H1>COLUNA</H1>
+    <div class="container coluna">
+        <div>Item 1</div>
+        <div class="deslocado">Item 2</div>
+        <div class="destaque">Item 3</div>
+        <div>Item 4</div>
+        <div>Item 5</div>
+        <div>Item 6</div>
+    </div>
+</body>
+</html>
