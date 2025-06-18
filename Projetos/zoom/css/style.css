@@ -1,0 +1,163 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 20px;
+    column-gap: 20px;
+    align-items: center;
+    grid-template-areas:
+        'cabecalho cabecalho'
+        'capa-conteudo capa-imagem'
+        'organizacao-imagem organizacao-conteudo'
+    ;
+}
+
+header {
+    grid-area: cabecalho;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid lightgray;
+}
+
+body {
+    margin: 0;
+}
+
+section#capa-conteudo {
+    grid-area: capa-conteudo;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section#capa-imagem {
+    grid-area: capa-imagem;
+}
+
+section#capa-imagem>img {
+    max-width: 100%;
+}
+
+section#organizacao-imagem {
+    grid-area: organizacao-imagem;
+}
+
+section#organizacao-imagem>img {
+    max-width: 100%;
+}
+
+section#organizacao-conteudo {
+    grid-area: organizacao-conteudo;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    flex-grow: 1;
+    padding: 5px;
+}
+
+nav>ul {
+    display: flex;
+    list-style: none;
+}
+
+nav>ul>li>a {
+    text-decoration: none;
+    padding-left: 10px;
+}
+
+nav>ul>li>a:link,
+a:visited {
+    color: #484848;
+}
+
+nav>ul>li>a:hover {
+    color: #0B5CFF;
+}
+
+footer {
+    background-color: #f2f2f2;
+    padding: 30px 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.botao {
+    text-decoration: none;
+    color: #0B5CFF;
+    border: 2px solid #0B5CFF;
+    border-radius: 25px;
+    padding: 5px 30px;
+}
+
+.botao.destaque {
+    background-color: #0B5CFF;
+    color: white;
+}
+
+.botao.destaque:hover {
+    background-color: #2D73FF;
+    color: white;
+}
+
+/* Tipogafia */
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+}
+
+.texto-destaque {
+    color: #0B5CFF;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 20px;
+        column-gap: 20px;
+        align-items: center;
+        grid-template-areas:
+            'cabecalho'
+            'capa-conteudo'
+            'capa-imagem'
+            'organizacao-imagem'
+            'organizacao-conteudo'
+        ;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        border-bottom: 1px solid lightgray;
+    }
+
+    nav{
+        padding: 0;
+        margin: 0;
+    }
+    nav>ul>li>a {
+        padding-left: 0;
+        margin: 0;
+    }
+}
