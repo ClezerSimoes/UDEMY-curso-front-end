@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            background-color: black;
+        }
+
+        #container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 100px 100px 100px;
+            color: black;
+            padding: 20px;
+        }
+
+        #container div{
+            margin: 10px;
+            padding: 20px;
+            border: 1px solid white;
+            background-color: lightgray;
+        }
+
+        #item-1{
+            grid-column: 1/3;
+        }
+
+        #item-3{
+            grid-column: span 3;
+            grid-row: span 2;
+        }
+
+        #item-6{
+            grid-row: span 2;
+        }
+
+        #item-9{
+            grid-column: span 3;
+        }
+    </style>
+
+</head>
+<body>
+
+    <div id="container">
+        <div id="item-1">Busca</div>
+        <div id="item-2">Menu</div>
+        <div id="item-3">Banner</div>
+        <div id="item-4">Conteúdo 1</div>
+        <div id="item-5">Conteúdo 2</div>
+        <div id="item-6">Filtros</div>
+        <div id="item-7">Conteúdo 3</div>
+        <div id="item-8">Conteúdo 4</div>
+        <div id="item-9">Rodapé</div>
+    </div>
+    
+</body>
+</html>
