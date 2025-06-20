@@ -1,0 +1,66 @@
+body{
+    width: 900px;
+    margin: 0px auto;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    justify-items: center;
+}
+
+div.card p{
+    color: rgb(5, 5, 61);
+    background-color: lightblue;
+    padding: 20px;
+    border-radius: 10px;
+    height: 20px;
+}
+
+div.card form{
+    border: 1px solid lightgray;
+    background-color: aliceblue;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+div.card h1{
+    margin-top: 0px;
+}
+
+.container{
+    width: 600px;
+    margin-top: 50px;   
+}
+
+#alcool{
+    display: block;
+    justify-self: stretch;
+}
+
+#gasolina{
+    display: block;
+    justify-self: stretch;
+}
+
+#btn_calcular{
+    display: block;
+    justify-self: center;
+    background-color: rgb(10, 31, 127);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+#btn_calcular:hover{
+    background-color: rgb(16, 51, 203);
+    cursor: pointer;
+}
+
+#btn_calcular:active{
+    background-color: rgb(2, 22, 114);
+    cursor: pointer;
+}
+
+
+
+
