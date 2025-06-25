@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista Nomes</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script type="text/javascript" src="./js/script.js"></script>
+    
+
+</head>
+<body>
+
+    <div class="container"> <!--Container -->
+        <div class="row"><!-- Row -->
+            <div class="col-md-12"><!-- col-md-12 -->
+                <h2>Usuários</h2>
+
+                <div class="form-inline">
+                    <input class="form-control mr-2" type="text" placeholder="Pesquise um nome" id="campo-nome">
+
+                    <input class="btn btn-primary mr-2" type="submit" value="Pesquisar" onclick="pesquisarNomes()">
+
+                    <input class="btn btn-warning" type="submit" value="Carregar todos" onclick="carregarNomes()">
+                </div>
+
+                <hr class="juji">
+
+                <ul class="list-group" id="lista">
+                    <li class="list-group-item">Nenhum nome...</li>
+                </ul>
+            </div><!-- col-md-12 -->
+
+        </div><!-- Row -->
+    </div><!--Container -->
+
+</body>
+</html>
