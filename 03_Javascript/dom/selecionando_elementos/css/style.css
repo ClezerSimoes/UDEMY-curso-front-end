@@ -3,3 +3,8 @@
 #destaque{
     background-color: orange;
 }
+
+h1.vermelho{
+    background-color: lightgray;
+    color: red;
+}
