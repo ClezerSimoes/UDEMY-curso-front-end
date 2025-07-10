@@ -1,0 +1,38 @@
+type Movie = {
+    title: string,
+    year: number,
+    [key: string | number] : string | number | boolean
+};
+
+type Movies = {
+    [key: string] : Movie
+};
+
+let movies = {
+    movie1 : {
+        title: "A Origem",
+        year: 2010,
+        isFavorite: true,
+        genre: "ficção cientifica",
+        director: "Christopher Nolan"
+    },
+    movie2 : {
+        title: "Scott Pilgrim",
+        year: 2010,
+        isFavorite: true,
+        genre: "ação/fantasia",
+        director: "Edgar Wright"
+    },
+    movie3 : {
+        title: "Donnie Darko",
+        year: 2001,
+        isFavorite: false,
+        genre: "suspense",
+    }
+};
+
+export function showMovies(movies: Movies){
+    console.log(movies)
+};
+
+showMovies(movies)
